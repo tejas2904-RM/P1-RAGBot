@@ -43,5 +43,11 @@ def test_vercel_json_exists() -> None:
     vercel_path = PROJECT_ROOT / "vercel.json"
     assert vercel_path.exists()
     content = vercel_path.read_text(encoding="utf-8")
-    assert "phases/phase5/frontend" in content
     assert "inject_config.py" in content
+
+
+def test_pyproject_vercel_entrypoint() -> None:
+    pyproject_path = PROJECT_ROOT / "pyproject.toml"
+    assert pyproject_path.exists()
+    content = pyproject_path.read_text(encoding="utf-8")
+    assert "phases.phase6.api_server:app" in content

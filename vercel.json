@@ -1,8 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "python phases/phase7/inject_config.py > phases/phase5/frontend/config.js",
-  "outputDirectory": "phases/phase5/frontend",
-  "rewrites": [{ "source": "/((?!static/|config\\.js).*)", "destination": "/index.html" }],
+  "installCommand": "pip install -r requirements.txt",
   "headers": [
     {
       "source": "/config.js",

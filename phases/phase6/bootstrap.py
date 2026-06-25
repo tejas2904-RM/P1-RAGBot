@@ -64,6 +64,20 @@ def apply_secrets(extra: dict[str, str] | None = None) -> None:
             os.environ[key] = str(value)
 
 
+def configure_runtime_paths() -> None:
+    """Use writable /tmp for vector store on Vercel serverless."""
+    if not os.getenv("VERCEL"):
+        return
+    from pathlib import Path
+
+    tmp_root = Path("/tmp/ragbot")
+    tmp_store = tmp_root / "vector_store"
+    tmp_store.mkdir(parents=True, exist_ok=True)
+    paths.DATA_DIR = tmp_root
+    paths.VECTOR_STORE_DIR = tmp_store
+    logger.info("Vercel runtime: vector store path=%s", tmp_store)
+
+
 def ensure_index_ready(*, force_rebuild: bool = False) -> IndexStats:
     """Ensure vector index meets minimum chunk count; rebuild from corpus if needed."""
     stats = get_index_stats(min_chunk_count=0)
@@ -94,5 +108,6 @@ def ensure_index_ready(*, force_rebuild: bool = False) -> IndexStats:
 
 def init_backend(*, force_rebuild: bool = False) -> IndexStats:
     """Apply secrets and ensure index readiness (single entry for apps)."""
+    configure_runtime_paths()
     apply_secrets()
     return ensure_index_ready(force_rebuild=force_rebuild)
