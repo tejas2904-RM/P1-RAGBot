@@ -8,13 +8,6 @@ from phases.phase5.config import APP_TITLE, DISCLAIMER, EXAMPLE_QUESTIONS, WELCO
 from phases.phase5.service import ask_question, get_health
 from phases.phase6.bootstrap import init_backend
 
-st.set_page_config(
-    page_title=APP_TITLE,
-    page_icon="💬",
-    layout="centered",
-    initial_sidebar_state="collapsed",
-)
-
 _DARK_CSS = """
 <style>
     .stApp { background-color: #0a0e17; color: #f1f5f9; }
@@ -85,6 +78,12 @@ def _render_response(payload) -> None:
 
 
 def main() -> None:
+    st.set_page_config(
+        page_title=APP_TITLE,
+        page_icon="💬",
+        layout="centered",
+        initial_sidebar_state="collapsed",
+    )
     st.markdown(_DARK_CSS, unsafe_allow_html=True)
 
     try:
@@ -137,4 +136,5 @@ def main() -> None:
     st.caption(DISCLAIMER)
 
 
-main()
+if __name__ == "__main__":
+    main()

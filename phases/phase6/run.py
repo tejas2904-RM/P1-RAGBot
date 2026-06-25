@@ -21,7 +21,7 @@ def main() -> None:
     root = Path(__file__).resolve().parents[2]
 
     if args.command == "streamlit":
-        app_path = Path(__file__).resolve().parent / "streamlit_app.py"
+        app_path = Path(__file__).resolve().parents[2] / "streamlit_app.py"
         raise SystemExit(
             subprocess.call(
                 [

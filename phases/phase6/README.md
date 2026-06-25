@@ -36,7 +36,7 @@ Or use `.env` in the project root (loaded before Streamlit secrets).
 
 1. Push `main` to [tejas2904-RM/M2-RAGBOT](https://github.com/tejas2904-RM/M2-RAGBOT).
 2. [Streamlit Cloud](https://share.streamlit.io/) → **New app** → select repo, branch `main`.
-3. **Main file path:** `phases/phase6/streamlit_app.py`
+3. **Main file path:** `streamlit_app.py` (repo root) — or `phases/phase6/streamlit_app.py`
 4. **App settings → Secrets** — paste TOML (same shape as `.streamlit/secrets.toml.example`):
 
 ```toml
