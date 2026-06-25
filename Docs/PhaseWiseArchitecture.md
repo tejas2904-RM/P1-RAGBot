@@ -1055,11 +1055,11 @@ phases/phase5/frontend/
 
 #### Deliverables
 
-- [ ] `vercel.json` at repo root (or `phases/phase5/frontend/vercel.json`)
-- [ ] `phases/phase7/README.md` — Vercel deploy steps
-- [ ] Frontend updated to use configurable API base URL (not hard-coded `127.0.0.1:8000`)
-- [ ] Vercel project env vars documented in README
-- [ ] Production smoke test: meta load, example question, factual answer, refusal
+- [x] `vercel.json` at repo root (or `phases/phase5/frontend/vercel.json`)
+- [x] `phases/phase7/README.md` — Vercel deploy steps
+- [x] Frontend updated to use configurable API base URL (not hard-coded `127.0.0.1:8000`)
+- [x] Vercel project env vars documented in README
+- [x] Production smoke test: meta load, example question, factual answer, refusal
 
 #### Deploy steps (summary)
 

@@ -8,7 +8,7 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from phases.phase5.config import APP_TITLE, DISCLAIMER
@@ -33,6 +33,7 @@ _cors_origins = os.getenv(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[origin.strip() for origin in _cors_origins.split(",") if origin.strip()],
+    allow_origin_regex=r"https://[\w.-]+\.vercel\.app",
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
@@ -65,6 +66,17 @@ def chat(request: ChatRequest) -> ChatResponse:
 def disclaimer() -> dict[str, str]:
     """Reusable disclaimer snippet for UI banners and docs."""
     return {"disclaimer": DISCLAIMER}
+
+
+@app.get("/config.js", include_in_schema=False, response_model=None)
+def serve_config() -> FileResponse | Response:
+    """Runtime API base URL config for Vercel / static frontend."""
+    config_path = FRONTEND_DIR / "config.js"
+    if config_path.exists():
+        return FileResponse(config_path, media_type="application/javascript")
+    from phases.phase7.inject_config import build_config_js
+
+    return Response(content=build_config_js(), media_type="application/javascript")
 
 
 @app.get("/", include_in_schema=False)

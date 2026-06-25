@@ -32,6 +32,17 @@ const QUICK_ACTION_ICONS = {
   default: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
 };
 
+function getApiBase() {
+  const env = window.__ENV__ || {};
+  return String(env.API_BASE_URL || "").replace(/\/$/, "");
+}
+
+function apiUrl(path) {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const base = getApiBase();
+  return base ? `${base}${normalizedPath}` : normalizedPath;
+}
+
 function getTimeGreeting() {
   const hour = new Date().getHours();
   if (hour < 12) return "Good morning";
@@ -159,7 +170,7 @@ async function askQuestion(query) {
 
   setLoading(true);
   try {
-    const payload = await fetchJson("/api/v1/chat", {
+    const payload = await fetchJson(apiUrl("/api/v1/chat"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: trimmed }),
@@ -183,8 +194,8 @@ async function bootstrap() {
 
   try {
     const [meta, health] = await Promise.all([
-      fetchJson("/api/v1/meta"),
-      fetchJson("/health"),
+      fetchJson(apiUrl("/api/v1/meta")),
+      fetchJson(apiUrl("/health")),
     ]);
 
     document.title = meta.title;
@@ -203,7 +214,13 @@ async function bootstrap() {
       hideStatus();
     }
   } catch (error) {
-    showStatus("Unable to load assistant configuration. Is the API server running?");
+    const onVercel = window.location.hostname.includes("vercel.app");
+    const missingBackend = onVercel && !getApiBase();
+    showStatus(
+      missingBackend
+        ? "API_BASE_URL is not configured. Set it in Vercel project environment variables."
+        : "Unable to load assistant configuration. Is the API server running?"
+    );
     console.error(error);
   }
 }

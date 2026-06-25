@@ -140,4 +140,13 @@ def test_serves_frontend_static_assets(api_client) -> None:
     assert css.status_code == 200
     assert js.status_code == 200
     assert "disclaimer" in css.text.lower()
-    assert "/api/v1/chat" in js.text
+    assert "function apiUrl" in js.text
+    assert 'apiUrl("/api/v1/chat")' in js.text
+
+
+def test_serves_config_js(api_client) -> None:
+    response = api_client.get("/config.js")
+    assert response.status_code == 200
+    assert "application/javascript" in response.headers.get("content-type", "")
+    assert "window.__ENV__" in response.text
+    assert "API_BASE_URL" in response.text
