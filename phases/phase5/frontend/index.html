@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e17" />
+    <meta name="color-scheme" content="dark" />
+    <title>Mutual Fund FAQ Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navigation">
+        <div class="sidebar__top">
+          <button type="button" class="sidebar__btn" id="sidebar-toggle" aria-label="Toggle sidebar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M9 3v18" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </button>
+          <button type="button" class="sidebar__btn" id="new-chat-btn" aria-label="New question">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button type="button" class="sidebar__btn sidebar__btn--active" aria-label="Chat" aria-current="page">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="sidebar__btn" aria-label="Schemes" title="5 HDFC schemes">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <button type="button" class="sidebar__btn" aria-label="Sources" title="Groww sources">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="sidebar__bottom">
+          <button type="button" class="sidebar__btn" aria-label="About this assistant">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 11v5M12 8h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="sidebar__avatar" aria-hidden="true">MF</div>
+        </div>
+      </aside>
+
+      <div class="main-shell">
+        <header class="topbar">
+          <div class="topbar__spacer"></div>
+          <div class="topbar__center">
+            <p id="disclaimer-banner" class="disclaimer-pill" role="note">
+              Facts-only. No investment advice.
+            </p>
+          </div>
+          <div class="topbar__right">
+            <div class="topbar__mark" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.8 5.7 21l2.3-7-6-4.6h7.6L12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <main class="chat-view" id="chat-view">
+          <section id="status-banner" class="status-banner status-banner--hidden" role="status"></section>
+
+          <div id="hero-section" class="hero">
+            <div class="greeting">
+              <h1 class="greeting__title">
+                <span id="greeting-text">Good evening</span><span class="greeting__comma">,</span>
+                <span class="greeting__name" id="app-title">Mutual Fund FAQ Assistant</span>
+              </h1>
+            </div>
+            <p id="welcome-message" class="hero__subtitle">Loading…</p>
+
+            <form id="chat-form" class="composer" aria-label="Ask a question">
+              <label for="query-input" class="visually-hidden">Your question</label>
+              <textarea
+                id="query-input"
+                class="composer__input"
+                name="query"
+                rows="2"
+                maxlength="500"
+                placeholder="How can I help you today?"
+                required
+              ></textarea>
+              <div class="composer__toolbar">
+                <span id="char-count" class="composer__char-count">0 / 500</span>
+                <div class="composer__actions">
+                  <button type="submit" id="submit-btn" class="composer__send" aria-label="Send question">
+                    <span id="submit-spinner" class="composer__spinner composer__spinner--hidden" aria-hidden="true"></span>
+                    <svg id="submit-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <rect x="7" y="5" width="4" height="14" rx="1" fill="currentColor"/>
+                      <rect x="13" y="5" width="4" height="14" rx="1" fill="currentColor"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <ul id="example-list" class="quick-actions" aria-label="Example questions"></ul>
+          </div>
+
+          <section id="response-panel" class="response-thread response--hidden" aria-live="polite">
+            <div class="response-thread__inner">
+              <p id="response-body" class="response-thread__body"></p>
+              <div id="response-meta" class="response-thread__meta response__meta--hidden">
+                <p id="response-source" class="response-thread__row response__meta--hidden">
+                  <span class="response-thread__label">Source</span>
+                  <a id="source-link" class="response-thread__link" href="#" target="_blank" rel="noopener noreferrer">
+                    <span id="source-link-text"></span>
+                    <svg class="response-thread__external" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </p>
+                <p id="response-updated" class="response-thread__row response__meta--hidden"></p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <p id="footer-disclaimer">Facts-only. No investment advice.</p>
+        </footer>
+      </div>
+    </div>
+    <script src="/static/js/app.js" defer></script>
+  </body>
+</html>

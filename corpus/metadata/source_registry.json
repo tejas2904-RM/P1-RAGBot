@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "scheme_id": "hdfc-mid-cap",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "status": "ok",
+      "last_fetched": "2026-06-25T20:41:18.683110+00:00",
+      "content_hash": "sha256:96aa39d7d06c6ed3f100e45f3f2f8c6e5a4b25e1964223f6845d21806d51882c",
+      "http_status": 200,
+      "error": null,
+      "raw_snapshot": "hdfc-mid-cap.html"
+    },
+    {
+      "scheme_id": "hdfc-equity",
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "status": "ok",
+      "last_fetched": "2026-06-25T20:41:19.107600+00:00",
+      "content_hash": "sha256:bf39bac4a301729a43a4d4cded1ff731fbe6bfc3de41af59c942a9b6dc0d9b03",
+      "http_status": 200,
+      "error": null,
+      "raw_snapshot": "hdfc-equity.html"
+    },
+    {
+      "scheme_id": "hdfc-focused",
+      "url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "status": "ok",
+      "last_fetched": "2026-06-25T20:41:19.415821+00:00",
+      "content_hash": "sha256:0b52f5e991ad860778a27ac028b5f35e3656d0265c7c91ce8c1854b35e83c5cf",
+      "http_status": 200,
+      "error": null,
+      "raw_snapshot": "hdfc-focused.html"
+    },
+    {
+      "scheme_id": "hdfc-elss",
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "status": "ok",
+      "last_fetched": "2026-06-25T20:41:19.678606+00:00",
+      "content_hash": "sha256:3dc5a11004f4bb21d8715f2bd7ee7684a5bb23851fa948f4ac08cb1fd5d07fd7",
+      "http_status": 200,
+      "error": null,
+      "raw_snapshot": "hdfc-elss.html"
+    },
+    {
+      "scheme_id": "hdfc-large-cap",
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "status": "ok",
+      "last_fetched": "2026-06-25T20:41:19.995441+00:00",
+      "content_hash": "sha256:6a8e57c6e04143855b30439892dd3bc3b3e03e40a752e3004923c1d70da297d8",
+      "http_status": 200,
+      "error": null,
+      "raw_snapshot": "hdfc-large-cap.html"
+    }
+  ]
+}

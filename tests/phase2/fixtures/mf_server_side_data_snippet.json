@@ -1,0 +1,19 @@
+{
+  "expense_ratio": "0.75",
+  "exit_load": "Exit load of 1% if redeemed within 1 year.",
+  "min_sip_investment": 100,
+  "min_lumpsum_investment": null,
+  "lock_in": {"years": null, "months": null, "days": null},
+  "nfo_risk": "Moderately High",
+  "return_stats": [{"risk": "Very High"}],
+  "benchmark_name": "NIFTY Midcap 150 Total Return Index",
+  "benchmark": "NIFTY Midcap 150 TRI",
+  "category": "Equity",
+  "sub_category": "Mid Cap",
+  "amc": "HDFC",
+  "nav": 227.898,
+  "nav_date": "24-Jun-2026",
+  "aum": 97350.4842,
+  "groww_rating": 5,
+  "simple_return": {"return1y": 9.07}
+}

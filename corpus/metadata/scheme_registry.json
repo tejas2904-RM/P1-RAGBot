@@ -1,0 +1,84 @@
+{
+  "amc": "HDFC Mutual Fund",
+  "source": "groww.in",
+  "schemes": [
+    {
+      "id": "hdfc-mid-cap",
+      "scheme_name": "HDFC Mid Cap Fund - Direct Growth",
+      "category": "mid-cap",
+      "plan": "Direct",
+      "option": "Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "aliases": [
+        "hdfc mid cap",
+        "hdfc mid cap fund",
+        "hdfc midcap",
+        "mid cap",
+        "midcap",
+        "mid cap fund"
+      ]
+    },
+    {
+      "id": "hdfc-equity",
+      "scheme_name": "HDFC Equity Fund - Direct Growth",
+      "category": "flexi-cap",
+      "plan": "Direct",
+      "option": "Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
+      "aliases": [
+        "hdfc equity",
+        "hdfc equity fund",
+        "equity fund",
+        "flexi cap",
+        "flexi-cap",
+        "flexicap"
+      ]
+    },
+    {
+      "id": "hdfc-focused",
+      "scheme_name": "HDFC Focused Fund - Direct Growth",
+      "category": "focused",
+      "plan": "Direct",
+      "option": "Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
+      "aliases": [
+        "hdfc focused",
+        "hdfc focused fund",
+        "focused fund",
+        "focused"
+      ]
+    },
+    {
+      "id": "hdfc-elss",
+      "scheme_name": "HDFC ELSS Tax Saver Fund - Direct Plan Growth",
+      "category": "elss",
+      "plan": "Direct",
+      "option": "Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
+      "aliases": [
+        "hdfc elss",
+        "hdfc elss tax saver",
+        "elss tax saver",
+        "elss",
+        "tax saver",
+        "tax saver fund"
+      ]
+    },
+    {
+      "id": "hdfc-large-cap",
+      "scheme_name": "HDFC Large Cap Fund - Direct Growth",
+      "category": "large-cap",
+      "plan": "Direct",
+      "option": "Growth",
+      "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+      "aliases": [
+        "hdfc large cap",
+        "hdfc large cap fund",
+        "large cap",
+        "large-cap",
+        "largecap",
+        "large cap fund"
+      ]
+    }
+  ]
+}
