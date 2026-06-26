@@ -1,107 +1,53 @@
 # Phase 7 — Frontend Deployment (Vercel)
 
-Deploy the chat UI and API on [Vercel](https://vercel.com) via FastAPI (`pyproject.toml` entrypoint).
+Deploy the Phase 5 static chat UI on [Vercel](https://vercel.com). The UI calls the **Phase 6 Render** API via `API_BASE_URL`.
 
-## Recommended: unified FastAPI on Vercel
-
-Vercel detects Python/FastAPI in this repo. Use the ASGI entrypoint in `pyproject.toml`:
-
-```toml
-[tool.vercel]
-entrypoint = "phases.phase6.api_server:app"
-```
-
-This serves **both** the Phase 5 UI (`/`) and API (`/api/v1/chat`, `/health`) from one deployment. Leave `API_BASE_URL` **unset** — the frontend uses same-origin requests.
-
-### Deploy steps
-
-1. Import [tejas2904-RM/M2-RAGBOT](https://github.com/tejas2904-RM/M2-RAGBOT) on [vercel.com/new](https://vercel.com/new).
-2. **Framework Preset:** FastAPI (or Other — `pyproject.toml` defines the entrypoint).
-3. **Environment variables** (Project → Settings → Environment Variables):
-
-| Variable | Required | Purpose |
-|----------|----------|---------|
-| `GROQ_API_KEY` | Yes | LLM answers |
-| `OPENAI_API_KEY` | Yes* | Embeddings (`EMBEDDING_PROVIDER=openai`) |
-| `GENERATOR_PROVIDER` | No | Default `groq` |
-| `EMBEDDING_PROVIDER` | No | Default `openai` |
-
-\* Or set `EMBEDDING_PROVIDER=deterministic` for tests (not recommended in production).
-
-4. Deploy. Open your Vercel URL — chat UI and API share the same origin.
-
-On cold start, the app rebuilds the vector index in `/tmp` from `corpus/processed/embedded_chunks.json` (bundled in the repo).
-
----
-
-## Alternative: static frontend + external API
-
-If the API runs elsewhere (Render, Railway, Streamlit sidecar), set:
-
-| Variable | Example |
-|----------|---------|
-| `API_BASE_URL` | `https://your-api.onrender.com` |
-
-The build writes `config.js` so the static UI calls that host. Use this only if you split frontend/API across two deployments.
-
-## Architecture (unified)
+## Architecture
 
 ```
-Browser → Vercel (FastAPI) → Phase 6 bootstrap → Phase 4 pipeline → vector index
-              /                  /api/v1/chat
-              /static/…
+Browser → Vercel (static UI) → API_BASE_URL → Render (Phase 6 FastAPI)
 ```
 
-## Architecture (split frontend + API)
+No API keys on Vercel — only the public Render backend URL.
 
-## Local development
+## Deploy on Vercel
 
-**Same server (Phase 5):** `config.js` uses empty `API_BASE_URL` → same-origin requests.
+1. Deploy **Phase 6 on Render first** and copy the API URL.
+2. [vercel.com/new](https://vercel.com/new) → import **M2-RAGBOT**.
+3. **Framework Preset:** Other (static — root `vercel.json` handles build).
+4. **Environment variable** (required):
 
-```bash
-python -m phases.phase5.run
-# http://127.0.0.1:8000/
-```
+| Name | Value |
+|------|--------|
+| `API_BASE_URL` | `https://m2-ragbot-api.onrender.com` |
 
-**Frontend only against remote API:**
+No trailing slash. Do **not** set `GROQ_API_KEY` on Vercel.
 
-```bash
-# Windows PowerShell
-$env:API_BASE_URL="https://your-api.onrender.com"
-python phases/phase7/inject_config.py > phases/phase5/frontend/config.js
-# Serve frontend with any static server, or use Phase 5 for /config.js route
-```
+5. Deploy. Open your Vercel URL.
 
-See `phases/phase5/frontend/config.example.js` for the shape of `window.__ENV__`.
-
-## Build script
-
-```bash
-API_BASE_URL=https://your-api.example.com python phases/phase7/inject_config.py
-```
-
-Writes:
-
-```javascript
-window.__ENV__ = {"API_BASE_URL": "https://your-api.example.com"};
-```
+6. On **Render**, set `API_CORS_ORIGINS` to your Vercel URL and redeploy the API.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `vercel.json` | Vercel build + SPA rewrites |
-| `phases/phase7/inject_config.py` | Build-time config generator |
-| `phases/phase5/frontend/config.js` | Runtime API base (generated on Vercel) |
-| `phases/phase5/frontend/config.example.js` | Example for manual setup |
+| `vercel.json` | Static build + SPA rewrites (repo root) |
+| `phases/phase7/inject_config.mjs` | Build-time `config.js` from `API_BASE_URL` |
+| `phases/phase5/frontend/` | HTML/CSS/JS source |
 
-## Smoke test (production)
+## Local frontend against remote API
 
-1. Open Vercel URL — dark chat UI loads, disclaimer visible.
-2. DevTools → Network: `GET /config.js` contains your `API_BASE_URL`.
-3. `GET {API_BASE_URL}/health` returns `index_ready: true`.
-4. Ask: *What is the expense ratio of HDFC Mid Cap Fund?* → answer + Groww source link.
-5. Ask: *Should I invest in HDFC Mid Cap?* → refusal, no external link.
+```powershell
+$env:API_BASE_URL="https://m2-ragbot-api.onrender.com"
+node phases/phase7/inject_config.mjs > phases/phase5/frontend/config.js
+```
+
+## Smoke test
+
+1. Vercel URL loads dark chat UI + disclaimer.
+2. `GET /config.js` shows correct `API_BASE_URL`.
+3. Factual question → answer + Groww source link.
+4. Advisory question → refusal, no external link.
 
 ## Tests
 

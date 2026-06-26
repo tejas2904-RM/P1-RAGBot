@@ -60,7 +60,6 @@ def test_apply_secrets_sets_env(monkeypatch) -> None:
 def test_apply_secrets_does_not_overwrite_with_empty(monkeypatch) -> None:
     monkeypatch.setenv("GROQ_API_KEY", "existing")
     monkeypatch.setattr("phases.phase6.bootstrap.load_env", lambda: None)
-    monkeypatch.setattr("phases.phase6.bootstrap.load_streamlit_secrets", lambda: {})
     apply_secrets({"GROQ_API_KEY": "", "OPENAI_API_KEY": "sk-test"})
     import os
 
@@ -84,6 +83,7 @@ def test_api_server_exports_fastapi_app(isolated_index, monkeypatch) -> None:
     import importlib
 
     monkeypatch.setenv("GENERATOR_PROVIDER", "template")
+    monkeypatch.setenv("PHASE6_SKIP_BOOTSTRAP", "1")
     import phases.phase6.api_server as api_server
 
     importlib.reload(api_server)

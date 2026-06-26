@@ -17,7 +17,8 @@ RAG-Chatbot/
 │   ├── phase3/              # RAG core ✅
 │   ├── phase4/              # Refusal & classification ✅
 │   ├── phase5/              # API + UI ✅
-│   └── phase6/              # Integration & testing
+│   ├── phase6/              # Render backend deploy ✅
+│   └── phase7/              # Vercel frontend deploy ✅
 └── tests/
     └── phase1/
 ```
@@ -73,6 +74,18 @@ python -m phases.phase5.run
 
 Open **http://127.0.0.1:8000/** for the chat UI (disclaimer, welcome, 3 example questions, Q&A).
 
+## Phase 6 — Render backend
+
+```bash
+python -m phases.phase6.run
+```
+
+Deploy via `render.yaml` Blueprint on [Render](https://render.com). See `phases/phase6/README.md`.
+
+## Phase 7 — Vercel frontend
+
+Static UI deploy on [Vercel](https://vercel.com) with `API_BASE_URL` pointing to the Render API. See `phases/phase7/README.md`.
+
 ## Tests
 
 ```bash
@@ -81,6 +94,8 @@ pytest tests/phase2 -v
 pytest tests/phase3 -v
 pytest tests/phase4 -v
 pytest tests/phase5 -v
+pytest tests/phase6 -v
+pytest tests/phase7 -v
 ```
 
 ## Pinned schemes (HDFC Mutual Fund)

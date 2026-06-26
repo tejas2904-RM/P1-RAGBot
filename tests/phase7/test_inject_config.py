@@ -39,15 +39,23 @@ def test_inject_config_cli() -> None:
     assert payload["API_BASE_URL"] == "https://backend.test"
 
 
-def test_vercel_json_exists() -> None:
+def test_vercel_json_static_frontend() -> None:
     vercel_path = PROJECT_ROOT / "vercel.json"
     assert vercel_path.exists()
     content = vercel_path.read_text(encoding="utf-8")
-    assert "inject_config.py" in content
+    assert "phases/phase5/frontend" in content
+    assert "inject_config.mjs" in content
+    assert "outputDirectory" in content
 
 
-def test_pyproject_vercel_entrypoint() -> None:
-    pyproject_path = PROJECT_ROOT / "pyproject.toml"
-    assert pyproject_path.exists()
-    content = pyproject_path.read_text(encoding="utf-8")
+def test_pyproject_has_no_vercel_entrypoint() -> None:
+    content = (PROJECT_ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "[tool.vercel]" not in content
+
+
+def test_render_blueprint_build_step() -> None:
+    render_path = PROJECT_ROOT / "render.yaml"
+    assert render_path.exists()
+    content = render_path.read_text(encoding="utf-8")
+    assert "phases.phase6.build" in content
     assert "phases.phase6.api_server:app" in content

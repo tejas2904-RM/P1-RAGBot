@@ -1,10 +1,9 @@
-"""Phase 6 startup — secrets, env, and vector index readiness."""
+"""Phase 6 startup — env and vector index readiness for Render."""
 
 from __future__ import annotations
 
 import logging
 import os
-from typing import Any
 
 from phases import paths
 from phases.env import load_env
@@ -13,59 +12,18 @@ from phases.phase2.models import IndexStats
 
 logger = logging.getLogger(__name__)
 
-SECRET_KEYS: tuple[str, ...] = (
-    "GROQ_API_KEY",
-    "GENERATOR_API_KEY",
-    "OPENAI_API_KEY",
-    "EMBEDDING_API_KEY",
-    "GENERATOR_PROVIDER",
-    "EMBEDDING_PROVIDER",
-    "GENERATOR_MODEL",
-    "EMBEDDING_MODEL",
-    "API_CORS_ORIGINS",
-)
-
-
-def _flatten_secrets(raw: Any, prefix: str = "") -> dict[str, str]:
-    """Flatten Streamlit/nested secret mappings into env key -> value."""
-    flat: dict[str, str] = {}
-    if raw is None:
-        return flat
-    if isinstance(raw, dict):
-        for key, value in raw.items():
-            full_key = f"{prefix}.{key}" if prefix else str(key)
-            if isinstance(value, dict):
-                flat.update(_flatten_secrets(value, full_key))
-            elif value is not None and str(value).strip():
-                flat[str(key)] = str(value)
-        return flat
-    return flat
-
-
-def load_streamlit_secrets() -> dict[str, str]:
-    """Read secrets from Streamlit when available (Cloud or local secrets.toml)."""
-    try:
-        import streamlit as st
-
-        return _flatten_secrets(dict(st.secrets))
-    except Exception:
-        return {}
-
 
 def apply_secrets(extra: dict[str, str] | None = None) -> None:
-    """Load .env, then Streamlit secrets, then optional overrides into os.environ."""
+    """Load .env and optional overrides into os.environ."""
     load_env()
-    merged = load_streamlit_secrets()
     if extra:
-        merged.update({key: value for key, value in extra.items() if value and str(value).strip()})
-    for key in SECRET_KEYS:
-        value = merged.get(key)
-        if value and str(value).strip():
-            os.environ[key] = str(value)
+        for key, value in extra.items():
+            if value and str(value).strip():
+                os.environ[key] = str(value)
 
 
 def configure_runtime_paths() -> None:
-    """Use writable /tmp for vector store on Vercel serverless."""
+    """Use writable /tmp for ephemeral hosts (serverless). Render uses project disk."""
     if not os.getenv("VERCEL"):
         return
     from pathlib import Path
@@ -75,11 +33,30 @@ def configure_runtime_paths() -> None:
     tmp_store.mkdir(parents=True, exist_ok=True)
     paths.DATA_DIR = tmp_root
     paths.VECTOR_STORE_DIR = tmp_store
-    logger.info("Vercel runtime: vector store path=%s", tmp_store)
+    logger.info("Ephemeral runtime: vector store path=%s", tmp_store)
+
+
+def ensure_embedded_corpus() -> None:
+    """Ensure embedded_chunks.json exists; embed from chunks.json when possible."""
+    if paths.EMBEDDED_CHUNKS_FILE.exists():
+        return
+
+    if not paths.CHUNKS_FILE.exists():
+        raise FileNotFoundError(
+            f"Missing {paths.EMBEDDED_CHUNKS_FILE} and {paths.CHUNKS_FILE}. "
+            "Commit corpus artifacts or run the Phase 2 pipeline."
+        )
+
+    logger.info("embedded_chunks.json missing — embedding from chunks.json")
+    from phases.phase2.embedder import embed_chunks_from_corpus, save_embedded_chunks_json
+
+    embedded = embed_chunks_from_corpus()
+    save_embedded_chunks_json(embedded)
 
 
 def ensure_index_ready(*, force_rebuild: bool = False) -> IndexStats:
     """Ensure vector index meets minimum chunk count; rebuild from corpus if needed."""
+    ensure_embedded_corpus()
     stats = get_index_stats(min_chunk_count=0)
     if (
         not force_rebuild
@@ -107,7 +84,7 @@ def ensure_index_ready(*, force_rebuild: bool = False) -> IndexStats:
 
 
 def init_backend(*, force_rebuild: bool = False) -> IndexStats:
-    """Apply secrets and ensure index readiness (single entry for apps)."""
+    """Apply secrets and ensure index readiness (Render entry)."""
     configure_runtime_paths()
     apply_secrets()
     return ensure_index_ready(force_rebuild=force_rebuild)

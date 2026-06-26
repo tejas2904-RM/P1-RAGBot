@@ -3,6 +3,3 @@ name = "m2-ragbot"
 version = "1.0.0"
 description = "HDFC mutual fund facts-only RAG FAQ assistant"
 requires-python = ">=3.11"
-
-[tool.vercel]
-entrypoint = "phases.phase6.api_server:app"

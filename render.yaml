@@ -1,0 +1,25 @@
+# Phase 6 — Render FastAPI backend (powers Phase 7 Vercel frontend)
+
+services:
+  - type: web
+    name: m2-ragbot-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m phases.phase6.build
+    startCommand: python -m uvicorn phases.phase6.api_server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.0"
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GENERATOR_PROVIDER
+        value: groq
+      - key: EMBEDDING_PROVIDER
+        value: openai
+      - key: GENERATOR_MODEL
+        value: llama-3.3-70b-versatile
+      - key: API_CORS_ORIGINS
+        sync: false

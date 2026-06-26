@@ -72,7 +72,7 @@ flowchart TB
 | Layer | Suggested Options |
 |-------|---------------------|
 | Frontend | HTML/JS (Phase 5 local); **Vercel** (Phase 7 production) |
-| Backend API | FastAPI (Phase 5); **Streamlit Community Cloud** (Phase 6 production) |
+| Backend API | FastAPI (Phase 5 local); **Render** (Phase 6 production) |
 | LLM | **Groq** (`llama-3.3-70b-versatile` default) |
 | Embeddings | `text-embedding-3-small` (OpenAI) or open-source equivalent |
 | Vector DB | Chroma, FAISS, or Qdrant (local-first) |
@@ -872,7 +872,7 @@ All advisory, performance, and out-of-scope sample queries are refused with the 
 
 **Goal:** Provide a clean, disclaimer-visible chat experience.
 
-> **Implementation note:** Phase 5 is split into **backend first**, then **frontend**. The FastAPI backend (`phases/phase5/`) is ready for any UI (Streamlit, React, HTML/JS).
+> **Implementation note:** Phase 5 is split into **backend first**, then **frontend**. The FastAPI backend (`phases/phase5/`) is reused in production via the Phase 6 Render wrapper (`phases/phase6/api_server.py`).
 
 #### UI Wireframe (Logical Layout)
 
@@ -951,69 +951,69 @@ User can ask questions via API or UI, see formatted responses, and disclaimer is
 
 ---
 
-### Phase 6 — Backend Deployment (Streamlit Community Cloud)
+### Phase 6 — Backend Deployment (Render)
 
-**Goal:** Deploy the Python RAG backend as a hosted, always-on service on [Streamlit Community Cloud](https://streamlit.io/cloud), connected to the GitHub repository.
+**Goal:** Deploy the FastAPI REST API as a hosted, always-on service on [Render](https://render.com), connected to the GitHub repository.
 
-> **Implementation note:** Streamlit Community Cloud runs Python apps from the repo’s default branch. The backend wraps the existing Phase 4/5 service layer (`handle_query`, index preflight) — it does not duplicate RAG logic.
+> **Implementation note:** Phase 6 wraps the existing Phase 5 FastAPI app (`phases/phase5/app.py`) with a bootstrap layer (`phases/phase6/bootstrap.py`) for env secrets and vector-index warmup. It does not duplicate RAG logic.
 
 #### Scope
 
 | Area | Detail |
 |------|--------|
-| Host | Streamlit Community Cloud (linked to `tejas2904-RM/M2-RAGBOT`) |
-| Entry | `phases/phase6/streamlit_app.py` (or repo-root `streamlit_app.py`) |
-| Pipeline | Imports `phases.phase4.pipeline.handle_query` and `phases.phase2.indexer.get_index_stats` |
-| Corpus / index | Bundle committed artifacts (`corpus/processed/`, `data/vector_store/` or rebuild on boot) |
-| Secrets | Streamlit **Secrets** / **Settings → Secrets**: `GROQ_API_KEY`, `OPENAI_API_KEY` (or `EMBEDDING_API_KEY`) |
-| CORS | Configure Phase 5 FastAPI `API_CORS_ORIGINS` if REST API is co-deployed for Vercel (Phase 7) |
+| Host | Render Web Service (linked to `tejas2904-RM/M2-RAGBOT`) |
+| Entry | `phases/phase6/api_server.py` — ASGI app for `uvicorn` |
+| Blueprint | `render.yaml` at repo root — service `m2-ragbot-api` |
+| Pipeline | Same routes as Phase 5: `/health`, `/api/v1/meta`, `/api/v1/chat` |
+| Corpus / index | Rebuild from `corpus/processed/embedded_chunks.json` on boot if index missing |
+| Secrets | Render **Environment** variables: `GROQ_API_KEY`, `OPENAI_API_KEY`, `API_CORS_ORIGINS` |
+| CORS | `API_CORS_ORIGINS` must include the Phase 7 Vercel domain |
 
 #### Deployment architecture
 
 ```mermaid
 flowchart LR
-    GH[GitHub main branch] --> SC[Streamlit Community Cloud]
-    SC --> App[streamlit_app.py]
-    App --> Pipeline[Phase 4 handle_query]
+    GH[GitHub main branch] --> Render[Render Web Service]
+    Render --> API[phases/phase6/api_server.py]
+    API --> Bootstrap[bootstrap — secrets + index warmup]
+    Bootstrap --> Pipeline[Phase 4 handle_query]
     Pipeline --> Index[(Vector index + corpus)]
-    App --> Secrets[Streamlit Secrets]
-    Vercel[Phase 7 — Vercel frontend] -.->|POST /api/v1/chat| API[FastAPI optional sidecar]
-    API --> Pipeline
+    API --> Secrets[Render env vars]
+    Vercel[Phase 7 — Vercel frontend] -->|POST /api/v1/chat| API
 ```
 
-**Recommended pattern:** Deploy a Streamlit app for backend health, warmup, and ops visibility; expose the same pipeline to Vercel via the existing **FastAPI** app (`phases/phase5/`) hosted on a Python-compatible platform (Render, Railway, or Fly.io) **or** a thin FastAPI wrapper in `phases/phase6/` that Streamlit Cloud can run if the project uses a single-process deploy bundle. The Vercel frontend (Phase 7) calls the public FastAPI base URL.
-
-#### Streamlit app requirements
+#### API requirements
 
 | Requirement | Implementation |
 |-------------|----------------|
-| Index readiness | Show banner if `get_index_stats().ready` is false |
-| Disclaimer | Always visible — **"Facts-only. No investment advice."** |
-| Chat | Text input → `handle_query()` → formatted answer + source + footer |
-| Example questions | Three buttons wired to the same pipeline |
-| No PII | No extra input fields for PAN, Aadhaar, account, OTP, email, phone |
-| Logging | No logging of raw user queries containing PII patterns |
+| Index readiness | `/health` returns `index_ready: true` before accepting traffic |
+| Boot warmup | `init_backend()` rebuilds index from embedded chunks if needed |
+| Secrets | API keys only on Render — never in repo or Vercel |
+| CORS | Allow Vercel origin via `API_CORS_ORIGINS` + `*.vercel.app` regex in Phase 5 |
+| Health check | Render `healthCheckPath: /health` |
 
 #### Deliverables
 
-- [x] `phases/phase6/streamlit_app.py` — hosted backend / ops UI entrypoint
-- [x] `.streamlit/config.toml` — theme (match dark UI palette), server headless settings
-- [x] `phases/phase6/README.md` — deploy steps for Streamlit Community Cloud
-- [x] Streamlit Secrets documented in README (not committed)
-- [x] Optional: `phases/phase6/api_server.py` — FastAPI wrapper for Vercel cross-origin calls
+- [x] `phases/phase6/api_server.py` — Render ASGI entrypoint
+- [x] `phases/phase6/bootstrap.py` — secrets + index warmup
+- [x] `phases/phase6/build.py` — Render build validation
+- [x] `phases/phase6/config.py` — Render service constants
+- [x] `render.yaml` — Render Blueprint
+- [x] `phases/phase6/README.md` — deploy steps for Render
 - [x] Health check: index chunk count ≥ 50 before accepting traffic
 
 #### Deploy steps (summary)
 
-1. Push `main` to GitHub (already linked to Streamlit Cloud).
-2. **Share → Streamlit Community Cloud → New app** → select repo, branch `main`, main file path `phases/phase6/streamlit_app.py`.
-3. Add secrets in the Streamlit Cloud dashboard (`GROQ_API_KEY`, `OPENAI_API_KEY`).
-4. Ensure vector store is present in repo or add a boot-time index rebuild step.
-5. Copy the public app URL; use it for smoke tests and (if applicable) as the backend reference in Phase 7.
+1. Push `main` to GitHub.
+2. **Render → New → Blueprint** → connect repo; confirm `render.yaml` creates `m2-ragbot-api`.
+3. Set environment variables: `GROQ_API_KEY`, `OPENAI_API_KEY`, `API_CORS_ORIGINS` (Vercel URL after Phase 7).
+4. Deploy; verify `GET /health` returns `index_ready: true`.
+5. Copy the public API URL (e.g. `https://m2-ragbot-api.onrender.com`) for Phase 7 `API_BASE_URL`.
 
 #### Exit criteria
 
-- Streamlit app loads on the public Cloud URL without errors.
+- Render service is live on the public URL without startup errors.
+- `GET /health` and `POST /api/v1/chat` succeed from curl/Postman.
 - Factual sample query returns answer + single Groww citation + last-updated footer.
 - Advisory query returns fixed refusal with no external link.
 - Secrets are not present in the repository or build logs.
@@ -1022,7 +1022,7 @@ flowchart LR
 
 ### Phase 7 — Frontend Deployment (Vercel)
 
-**Goal:** Deploy the Phase 5 static frontend (HTML/CSS/JS) to [Vercel](https://vercel.com) as a production CDN-hosted UI that calls the deployed backend API from Phase 6.
+**Goal:** Deploy the Phase 5 static frontend (HTML/CSS/JS) to [Vercel](https://vercel.com) as a production CDN-hosted UI that calls the Phase 6 Render API.
 
 #### Scope
 
@@ -1030,17 +1030,19 @@ flowchart LR
 |------|--------|
 | Host | Vercel (linked to `tejas2904-RM/M2-RAGBOT`) |
 | Source | `phases/phase5/frontend/` (static assets) |
-| API target | Production FastAPI base URL from Phase 6 (env: `API_BASE_URL`) |
-| Routing | `vercel.json` — SPA fallback to `index.html` if using client-side routes |
+| API target | Phase 6 Render FastAPI base URL (env: `API_BASE_URL`) |
+| Routing | `vercel.json` — static output + SPA fallback to `index.html` |
+| Build | `inject_config.mjs` writes `config.js` with `API_BASE_URL` at build time |
 
 #### Configuration
 
 | File / setting | Purpose |
 |----------------|---------|
-| `vercel.json` | Root directory, rewrites, headers |
-| `API_BASE_URL` | Vercel environment variable — e.g. `https://<backend-host>` |
-| `app.js` | Read `API_BASE_URL` from injected config or `window.__ENV__` |
-| Backend CORS | Phase 5 `API_CORS_ORIGINS` must include the Vercel domain (`https://*.vercel.app` and custom domain) |
+| `vercel.json` | Build command, output directory, rewrites |
+| `API_BASE_URL` | Vercel environment variable — Render API URL from Phase 6 |
+| `phases/phase7/inject_config.mjs` | Injects `window.__ENV__.API_BASE_URL` into `config.js` |
+| `app.js` | `apiUrl()` reads `window.__ENV__.API_BASE_URL` for cross-origin fetch |
+| Backend CORS | Phase 6 `API_CORS_ORIGINS` must include the Vercel domain |
 
 #### Frontend build layout
 
@@ -1049,32 +1051,33 @@ phases/phase5/frontend/
 ├── index.html
 ├── static/
 │   ├── css/styles.css
-│   └── js/app.js          # fetch(API_BASE_URL + '/api/v1/chat', ...)
-└── config.js              # optional runtime API base (gitignored template + example)
+│   └── js/app.js          # fetch(apiUrl('/api/v1/chat'), ...)
+└── config.js              # generated at build — window.__ENV__.API_BASE_URL
 ```
 
 #### Deliverables
 
-- [x] `vercel.json` at repo root (or `phases/phase5/frontend/vercel.json`)
+- [x] `vercel.json` at repo root
+- [x] `phases/phase7/inject_config.mjs` — build-time config injection
 - [x] `phases/phase7/README.md` — Vercel deploy steps
-- [x] Frontend updated to use configurable API base URL (not hard-coded `127.0.0.1:8000`)
+- [x] Frontend uses configurable API base URL (not hard-coded `127.0.0.1:8000`)
 - [x] Vercel project env vars documented in README
 - [x] Production smoke test: meta load, example question, factual answer, refusal
 
 #### Deploy steps (summary)
 
-1. **Vercel → New Project** → import `tejas2904-RM/M2-RAGBOT`.
-2. Set **Root Directory** to `phases/phase5/frontend` (or configure `vercel.json` output).
-3. Add environment variable `API_BASE_URL` pointing to the Phase 6 FastAPI URL.
+1. Complete **Phase 6** on Render and copy the API URL.
+2. **Vercel → New Project** → import `tejas2904-RM/M2-RAGBOT`.
+3. Add environment variable `API_BASE_URL` pointing to the Phase 6 Render URL (no trailing slash).
 4. Deploy; note the production URL (`https://m2-ragbot.vercel.app` or custom domain).
-5. Update backend CORS to allow the Vercel origin.
+5. Update Render `API_CORS_ORIGINS` with the Vercel origin and redeploy the API.
 
 #### Exit criteria
 
 - Vercel URL serves the dark-theme chat UI.
 - `/api/v1/meta` and `/api/v1/chat` succeed from the browser (CORS OK).
 - Disclaimer remains visible on every page load.
-- No API keys or secrets in frontend bundle or Vercel env exposed to client (only public API URL).
+- No API keys in frontend bundle — only the public Render API URL in `config.js`.
 
 ---
 
@@ -1140,7 +1143,7 @@ All success criteria from the problem statement are met:
         ↓
    UI Display with Disclaimer (Phase 5 local / Phase 7 Vercel)
         ↓
-   Backend API (Phase 6 Streamlit Cloud + FastAPI)
+   Backend API (Phase 6 Render — FastAPI)
 ```
 
 ---
@@ -1178,12 +1181,11 @@ RAG-Chatbot/
 │   ├── phase3/                       # RAG core (retriever, generator, pipeline)
 │   ├── phase4/                       # Query classification + refusals
 │   ├── phase5/                       # FastAPI + local HTML/JS UI
-│   ├── phase6/                       # Streamlit Cloud backend deploy
+│   ├── phase6/                       # Render backend deploy (api_server, bootstrap)
 │   ├── phase7/                       # Vercel frontend deploy config & docs
 │   └── phase8/                       # Integration test harness (optional)
-├── vercel.json                       # Phase 7 — Vercel routing / root dir
-├── .streamlit/                       # Phase 6 — Streamlit Cloud config
-│   └── config.toml
+├── render.yaml                       # Phase 6 — Render Blueprint
+├── vercel.json                       # Phase 7 — Vercel static build / routing
 ├── .github/
 │   └── workflows/
 │       └── reindex-corpus.yml        # Scheduled fetch + selective re-index (Phase 2.8)
@@ -1204,7 +1206,7 @@ RAG-Chatbot/
 | Phase 3 | RAG core | 2–3 days |
 | Phase 4 | Refusal & classification | 1–2 days |
 | Phase 5 | Local UI + API | 1 day |
-| Phase 6 | Backend deploy (Streamlit Cloud) | 1 day |
+| Phase 6 | Backend deploy (Render) | 0.5–1 day |
 | Phase 7 | Frontend deploy (Vercel) | 0.5–1 day |
 | Phase 8 | Testing & documentation | 1–2 days |
 
@@ -1221,7 +1223,7 @@ flowchart LR
     P3 --> P4[Phase 4<br/>Refusal]
     P3 --> P5[Phase 5<br/>Local UI]
     P4 --> P5
-    P5 --> P6[Phase 6<br/>Streamlit Backend]
+    P5 --> P6[Phase 6<br/>Render Backend]
     P5 --> P7[Phase 7<br/>Vercel Frontend]
     P6 --> P7
     P7 --> P8[Phase 8<br/>Test & Docs]
