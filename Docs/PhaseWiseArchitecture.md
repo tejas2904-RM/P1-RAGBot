@@ -548,7 +548,7 @@ flowchart TD
 2. **Install** dependencies from `requirements.txt`.
 3. **Fetch** — `python -m phases.phase1.run` (allowlist-enforced; 5 URLs only).
 4. **Re-index** — `python -m phases.phase2.reindex_job` (hash-diff selective 2.2–2.7).
-5. **Commit & push** (only if diffs exist) — `corpus/raw/`, `corpus/metadata/`, `corpus/processed/`, `data/vector_store/`, and updated `index_registry.json`.
+5. **Commit & push** (only if diffs exist) — `corpus/raw/`, `corpus/metadata/`, `corpus/processed/` (includes `embedded_chunks.json` and `index_registry.json`). `data/vector_store/` is gitignored; Render rebuilds the index on boot.
 
 **Secrets & environment**
 
