@@ -1058,7 +1058,9 @@ phases/phase5/frontend/
 #### Deliverables
 
 - [x] `vercel.json` at repo root
-- [x] `phases/phase7/inject_config.mjs` — build-time config injection
+- [x] `phases/phase7/build.py` — validate bundle and write `config.js`
+- [x] `phases/phase7/run.py` — local static preview server
+- [x] `phases/phase7/config.py` — frontend paths and env constants
 - [x] `phases/phase7/README.md` — Vercel deploy steps
 - [x] Frontend uses configurable API base URL (not hard-coded `127.0.0.1:8000`)
 - [x] Vercel project env vars documented in README

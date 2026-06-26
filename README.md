@@ -84,7 +84,11 @@ Deploy via `render.yaml` Blueprint on [Render](https://render.com). See `phases/
 
 ## Phase 7 — Vercel frontend
 
-Static UI deploy on [Vercel](https://vercel.com) with `API_BASE_URL` pointing to the Render API. See `phases/phase7/README.md`.
+```bash
+python -m phases.phase7.run
+```
+
+Set `API_BASE_URL` to your Render API for cross-origin preview. Deploy on [Vercel](https://vercel.com) — see `phases/phase7/README.md`.
 
 ## Tests
 
