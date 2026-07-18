@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T06:04:49.658589+00:00",
+  "generated_at": "2026-07-18T05:52:29.595538+00:00",
   "count": 56,
   "facts": [
     {
@@ -14,8 +14,8 @@
       "unit": "%",
       "display_value": "1.18%",
       "text": "The expense ratio of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 1.18%.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -29,8 +29,8 @@
       "unit": null,
       "display_value": "Nil",
       "text": "The exit load of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Nil.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -44,8 +44,8 @@
       "unit": "INR",
       "display_value": "₹500",
       "text": "The minimum SIP amount for HDFC ELSS Tax Saver Fund - Direct Plan Growth is ₹500.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -59,8 +59,8 @@
       "unit": "INR",
       "display_value": "₹500",
       "text": "The minimum lumpsum investment for HDFC ELSS Tax Saver Fund - Direct Plan Growth is ₹500.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -74,8 +74,8 @@
       "unit": null,
       "display_value": "3 years",
       "text": "The lock-in period for HDFC ELSS Tax Saver Fund - Direct Plan Growth is 3 years.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -89,8 +89,8 @@
       "unit": null,
       "display_value": "Moderately High",
       "text": "The riskometer classification of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Moderately High.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -104,8 +104,8 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "text": "The benchmark index of HDFC ELSS Tax Saver Fund - Direct Plan Growth is NIFTY 500 Total Return Index.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -119,8 +119,8 @@
       "unit": null,
       "display_value": "Equity / ELSS",
       "text": "The fund category of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Equity / ELSS.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -134,8 +134,8 @@
       "unit": null,
       "display_value": "HDFC",
       "text": "The fund house (AMC) for HDFC ELSS Tax Saver Fund - Direct Plan Growth is HDFC.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -145,12 +145,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
       "field": "nav",
-      "value": 1486.268,
+      "value": 1497.058,
       "unit": null,
-      "display_value": "1486.268",
-      "text": "The NAV of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 1486.268.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "display_value": "1497.058",
+      "text": "The NAV of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 1497.058.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -160,12 +160,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
       "field": "nav_date",
-      "value": "2026-07-16",
+      "value": "2026-07-17",
       "unit": null,
-      "display_value": "16-Jul-2026",
-      "text": "The NAV as-of date for HDFC ELSS Tax Saver Fund - Direct Plan Growth is 16-Jul-2026.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "display_value": "17-Jul-2026",
+      "text": "The NAV as-of date for HDFC ELSS Tax Saver Fund - Direct Plan Growth is 17-Jul-2026.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-elss",
@@ -179,8 +179,8 @@
       "unit": null,
       "display_value": "15685.1652",
       "text": "The AUM of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 15685.1652 crore.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:5844bb8de9054c9d74803814a5830c83fbab533dd476b97435c7cb052d753605"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5aa9f7c63799d7634d638c43763a8c69acbc9d3d676ba6f6a9948d961a7e7dbe"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -194,8 +194,8 @@
       "unit": "%",
       "display_value": "0.77%",
       "text": "The expense ratio of HDFC Equity Fund - Direct Growth is 0.77%.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -209,8 +209,8 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "text": "The exit load of HDFC Equity Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -224,8 +224,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum SIP amount for HDFC Equity Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -239,8 +239,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum lumpsum investment for HDFC Equity Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -254,8 +254,8 @@
       "unit": null,
       "display_value": "Moderately High",
       "text": "The riskometer classification of HDFC Equity Fund - Direct Growth is Moderately High.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -269,8 +269,8 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "text": "The benchmark index of HDFC Equity Fund - Direct Growth is NIFTY 500 Total Return Index.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -284,8 +284,8 @@
       "unit": null,
       "display_value": "Equity / Flexi Cap",
       "text": "The fund category of HDFC Equity Fund - Direct Growth is Equity / Flexi Cap.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -299,8 +299,8 @@
       "unit": null,
       "display_value": "HDFC",
       "text": "The fund house (AMC) for HDFC Equity Fund - Direct Growth is HDFC.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -310,12 +310,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
       "field": "nav",
-      "value": 2232.611,
+      "value": 2248.741,
       "unit": null,
-      "display_value": "2232.611",
-      "text": "The NAV of HDFC Equity Fund - Direct Growth is 2232.611.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "display_value": "2248.741",
+      "text": "The NAV of HDFC Equity Fund - Direct Growth is 2248.741.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -325,12 +325,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
       "field": "nav_date",
-      "value": "2026-07-16",
+      "value": "2026-07-17",
       "unit": null,
-      "display_value": "16-Jul-2026",
-      "text": "The NAV as-of date for HDFC Equity Fund - Direct Growth is 16-Jul-2026.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "display_value": "17-Jul-2026",
+      "text": "The NAV as-of date for HDFC Equity Fund - Direct Growth is 17-Jul-2026.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-equity",
@@ -344,8 +344,8 @@
       "unit": null,
       "display_value": "106495.6311",
       "text": "The AUM of HDFC Equity Fund - Direct Growth is 106495.6311 crore.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:54fcb3365cd50aebaa28eff1b48882e80f7f423cabf0fd8a9463732bd3f8ad05"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:0ffa61a37ab4775d196609a96080a9ab4ca730442841b3df3d7994f57ba90238"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -359,8 +359,8 @@
       "unit": "%",
       "display_value": "0.76%",
       "text": "The expense ratio of HDFC Focused Fund - Direct Growth is 0.76%.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -374,8 +374,8 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "text": "The exit load of HDFC Focused Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -389,8 +389,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum SIP amount for HDFC Focused Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -404,8 +404,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum lumpsum investment for HDFC Focused Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -419,8 +419,8 @@
       "unit": null,
       "display_value": "Moderately High Riskometer",
       "text": "The riskometer classification of HDFC Focused Fund - Direct Growth is Moderately High Riskometer.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -434,8 +434,8 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "text": "The benchmark index of HDFC Focused Fund - Direct Growth is NIFTY 500 Total Return Index.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -449,8 +449,8 @@
       "unit": null,
       "display_value": "Equity / Flexi Cap",
       "text": "The fund category of HDFC Focused Fund - Direct Growth is Equity / Flexi Cap.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -464,8 +464,8 @@
       "unit": null,
       "display_value": "HDFC",
       "text": "The fund house (AMC) for HDFC Focused Fund - Direct Growth is HDFC.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -475,12 +475,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
       "field": "nav",
-      "value": 266.375,
+      "value": 268.138,
       "unit": null,
-      "display_value": "266.375",
-      "text": "The NAV of HDFC Focused Fund - Direct Growth is 266.375.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "display_value": "268.138",
+      "text": "The NAV of HDFC Focused Fund - Direct Growth is 268.138.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -490,12 +490,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
       "field": "nav_date",
-      "value": "2026-07-16",
+      "value": "2026-07-17",
       "unit": null,
-      "display_value": "16-Jul-2026",
-      "text": "The NAV as-of date for HDFC Focused Fund - Direct Growth is 16-Jul-2026.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "display_value": "17-Jul-2026",
+      "text": "The NAV as-of date for HDFC Focused Fund - Direct Growth is 17-Jul-2026.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-focused",
@@ -509,8 +509,8 @@
       "unit": null,
       "display_value": "27303.2729",
       "text": "The AUM of HDFC Focused Fund - Direct Growth is 27303.2729 crore.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:d4ff774599fd107a9a6febb9b3e79454ee297f7909efe6b56c7b039fbb647d5f"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:68475c8c89b27b31456e5f1ede58804e62dd1767c0f3231455f21254490d6b03"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -524,8 +524,8 @@
       "unit": "%",
       "display_value": "1.03%",
       "text": "The expense ratio of HDFC Large Cap Fund - Direct Growth is 1.03%.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -539,8 +539,8 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "text": "The exit load of HDFC Large Cap Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -554,8 +554,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum SIP amount for HDFC Large Cap Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -569,8 +569,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum lumpsum investment for HDFC Large Cap Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -584,8 +584,8 @@
       "unit": null,
       "display_value": "Moderately High Riskometer",
       "text": "The riskometer classification of HDFC Large Cap Fund - Direct Growth is Moderately High Riskometer.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -599,8 +599,8 @@
       "unit": null,
       "display_value": "NIFTY 100 Total Return Index",
       "text": "The benchmark index of HDFC Large Cap Fund - Direct Growth is NIFTY 100 Total Return Index.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -614,8 +614,8 @@
       "unit": null,
       "display_value": "Equity / Large Cap",
       "text": "The fund category of HDFC Large Cap Fund - Direct Growth is Equity / Large Cap.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -629,8 +629,8 @@
       "unit": null,
       "display_value": "HDFC",
       "text": "The fund house (AMC) for HDFC Large Cap Fund - Direct Growth is HDFC.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -640,12 +640,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
       "field": "nav",
-      "value": 1231.721,
+      "value": 1239.108,
       "unit": null,
-      "display_value": "1231.721",
-      "text": "The NAV of HDFC Large Cap Fund - Direct Growth is 1231.721.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "display_value": "1239.108",
+      "text": "The NAV of HDFC Large Cap Fund - Direct Growth is 1239.108.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -655,12 +655,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
       "field": "nav_date",
-      "value": "2026-07-16",
+      "value": "2026-07-17",
       "unit": null,
-      "display_value": "16-Jul-2026",
-      "text": "The NAV as-of date for HDFC Large Cap Fund - Direct Growth is 16-Jul-2026.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "display_value": "17-Jul-2026",
+      "text": "The NAV as-of date for HDFC Large Cap Fund - Direct Growth is 17-Jul-2026.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-large-cap",
@@ -674,8 +674,8 @@
       "unit": null,
       "display_value": "39023.6868",
       "text": "The AUM of HDFC Large Cap Fund - Direct Growth is 39023.6868 crore.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:467a22825a46880fee33fc610648483ce20b366abe1234e3af1cc1e2f1a2f3cc"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:4b06aff60dc4f9b941874440c5dca5f3f7e4c6e95a804b7e54e217b75c881012"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -689,8 +689,8 @@
       "unit": "%",
       "display_value": "0.75%",
       "text": "The expense ratio of HDFC Mid Cap Fund - Direct Growth is 0.75%.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -704,8 +704,8 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year.",
       "text": "The exit load of HDFC Mid Cap Fund - Direct Growth is Exit load of 1% if redeemed within 1 year..",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -719,8 +719,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum SIP amount for HDFC Mid Cap Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -734,8 +734,8 @@
       "unit": "INR",
       "display_value": "₹100",
       "text": "The minimum lumpsum investment for HDFC Mid Cap Fund - Direct Growth is ₹100.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -749,8 +749,8 @@
       "unit": null,
       "display_value": "Moderately High",
       "text": "The riskometer classification of HDFC Mid Cap Fund - Direct Growth is Moderately High.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -764,8 +764,8 @@
       "unit": null,
       "display_value": "NIFTY Midcap 150 Total Return Index",
       "text": "The benchmark index of HDFC Mid Cap Fund - Direct Growth is NIFTY Midcap 150 Total Return Index.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -779,8 +779,8 @@
       "unit": null,
       "display_value": "Equity / Mid Cap",
       "text": "The fund category of HDFC Mid Cap Fund - Direct Growth is Equity / Mid Cap.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -794,8 +794,8 @@
       "unit": null,
       "display_value": "HDFC",
       "text": "The fund house (AMC) for HDFC Mid Cap Fund - Direct Growth is HDFC.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -805,12 +805,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
       "field": "nav",
-      "value": 229.588,
+      "value": 229.279,
       "unit": null,
-      "display_value": "229.588",
-      "text": "The NAV of HDFC Mid Cap Fund - Direct Growth is 229.588.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "display_value": "229.279",
+      "text": "The NAV of HDFC Mid Cap Fund - Direct Growth is 229.279.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -820,12 +820,12 @@
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
       "field": "nav_date",
-      "value": "2026-07-16",
+      "value": "2026-07-17",
       "unit": null,
-      "display_value": "16-Jul-2026",
-      "text": "The NAV as-of date for HDFC Mid Cap Fund - Direct Growth is 16-Jul-2026.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "display_value": "17-Jul-2026",
+      "text": "The NAV as-of date for HDFC Mid Cap Fund - Direct Growth is 17-Jul-2026.",
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     },
     {
       "scheme_id": "hdfc-mid-cap",
@@ -839,8 +839,8 @@
       "unit": null,
       "display_value": "100858.3136",
       "text": "The AUM of HDFC Mid Cap Fund - Direct Growth is 100858.3136 crore.",
-      "last_updated": "2026-07-16",
-      "content_hash": "sha256:e236234315044f8cb92f6bab06dee64dfc9eae95413bb6866490b2be75b527b8"
+      "last_updated": "2026-07-17",
+      "content_hash": "sha256:5886a46a3b53c37c24d0485974beba6d25e9c53b62669cf248ebe5351d99e554"
     }
   ]
 }
