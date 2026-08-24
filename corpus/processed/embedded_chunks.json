@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-23T04:22:23.555119+00:00",
+  "generated_at": "2026-08-24T04:28:56.678319+00:00",
   "embedding_model": "text-embedding-3-small",
   "embedding_dim": 1536,
   "count": 56,
   "chunks": [
     {
-      "chunk_id": "4c2d6240-7d6c-46c3-a89d-e1207d46899d",
+      "chunk_id": "ade65dac-5a5d-43ff-b463-94ca0431b820",
       "text": "The expense ratio of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 1.19%.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -18,7 +18,7 @@
       "unit": "%",
       "display_value": "1.19%",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.7725490196078431,
         -0.3254901960784313,
@@ -1561,7 +1561,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "bb69f988-9c1b-4092-9cec-d755847ab037",
+      "chunk_id": "c9c65be7-f78f-4723-a5f7-5b0d5da1c60d",
       "text": "The exit load of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Nil.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -1574,7 +1574,7 @@
       "unit": null,
       "display_value": "Nil",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.7019607843137254,
         0.7725490196078431,
@@ -3117,7 +3117,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "00cfbab0-a9c5-4865-8c58-040e31699d15",
+      "chunk_id": "e507d017-1b09-47c2-b1e9-2bf0dcc8c8b9",
       "text": "The minimum SIP amount for HDFC ELSS Tax Saver Fund - Direct Plan Growth is ₹500.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -3130,7 +3130,7 @@
       "unit": "INR",
       "display_value": "₹500",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.019607843137254943,
         -0.39607843137254906,
@@ -4673,7 +4673,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "ff6a9bf3-e039-48ad-94b6-1dae209b6536",
+      "chunk_id": "4a8a5f85-f4c4-4a5e-94e2-f5ef0918a80b",
       "text": "The minimum lumpsum investment for HDFC ELSS Tax Saver Fund - Direct Plan Growth is ₹500.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -4686,7 +4686,7 @@
       "unit": "INR",
       "display_value": "₹500",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.7254901960784315,
         -0.8431372549019608,
@@ -6229,7 +6229,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "05d85662-2cd0-4755-9dc1-252f162f5502",
+      "chunk_id": "e568a2e7-61f3-4f11-a0ad-e9a283f46fff",
       "text": "The lock-in period for HDFC ELSS Tax Saver Fund - Direct Plan Growth is 3 years.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -6242,7 +6242,7 @@
       "unit": null,
       "display_value": "3 years",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.14509803921568631,
         0.4745098039215687,
@@ -7785,7 +7785,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "38595267-3370-4fe2-a4ce-fd11a5c1ff6c",
+      "chunk_id": "d39e86f8-a8c9-4b04-8237-04d21a09c086",
       "text": "The riskometer classification of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Moderately High.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -7798,7 +7798,7 @@
       "unit": null,
       "display_value": "Moderately High",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.6941176470588235,
         -0.08235294117647063,
@@ -9341,7 +9341,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "c3d321d2-bbc7-456d-8bc7-b712da03d767",
+      "chunk_id": "2e554b7d-2ad2-4161-ba5b-84508e57a8d8",
       "text": "The benchmark index of HDFC ELSS Tax Saver Fund - Direct Plan Growth is NIFTY 500 Total Return Index.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -9354,7 +9354,7 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.48235294117647065,
         -0.9529411764705882,
@@ -10897,7 +10897,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "2b0f4fb7-9047-4530-a15d-f82b294d247c",
+      "chunk_id": "cd7a3340-83ca-4efa-b92f-2cc8698d03f6",
       "text": "The fund category of HDFC ELSS Tax Saver Fund - Direct Plan Growth is Equity / ELSS.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -10910,7 +10910,7 @@
       "unit": null,
       "display_value": "Equity / ELSS",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.6000000000000001,
         0.06666666666666665,
@@ -12453,7 +12453,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "d847ed16-5898-4835-ac24-2b1fad7e5a6b",
+      "chunk_id": "0a3faf1c-1fab-457d-bce0-a741536c390f",
       "text": "The fund house (AMC) for HDFC ELSS Tax Saver Fund - Direct Plan Growth is HDFC.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -12466,7 +12466,7 @@
       "unit": null,
       "display_value": "HDFC",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.2784313725490196,
         0.6862745098039216,
@@ -14009,7 +14009,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "0c5567fb-b9b7-4b49-bfa6-bf963abbc0eb",
+      "chunk_id": "650249db-b9d0-4176-9b17-e404a7256ce7",
       "text": "The NAV of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 1512.292.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -14022,7 +14022,7 @@
       "unit": null,
       "display_value": "1512.292",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.14509803921568631,
         -0.7098039215686274,
@@ -15565,7 +15565,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "e4151acd-3768-42ee-87c6-4156627fbb68",
+      "chunk_id": "e0cf4b22-19a0-4899-97a8-e6bae8a8789f",
       "text": "The NAV as-of date for HDFC ELSS Tax Saver Fund - Direct Plan Growth is 21-Aug-2026.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -15578,7 +15578,7 @@
       "unit": null,
       "display_value": "21-Aug-2026",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         -0.4274509803921569,
         -0.207843137254902,
@@ -17121,7 +17121,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "569d6d5c-f71e-41a7-8f8d-9e192b774b60",
+      "chunk_id": "7d843125-fc83-4f6f-9f05-bb9fff550642",
       "text": "The AUM of HDFC ELSS Tax Saver Fund - Direct Plan Growth is 16095.4454 crore.",
       "source_url": "https://groww.in/mutual-funds/hdfc-elss-tax-saver-fund-direct-plan-growth",
       "source": "groww.in",
@@ -17134,7 +17134,7 @@
       "unit": null,
       "display_value": "16095.4454",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:dc80d8ecbdeaf2f4a2cbe73e054cbe3c4ef2a860d5f17344cccb49c3be06493b",
+      "content_hash": "sha256:4d87606254c250ce02058d115d09be86e236ebb4e772b16856272ef0996f94c1",
       "embedding": [
         0.8823529411764706,
         0.780392156862745,
@@ -18677,7 +18677,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "282bd351-fc95-46ac-beaa-7235d180ad85",
+      "chunk_id": "9da813e9-11d2-4605-9185-57da229311c4",
       "text": "The expense ratio of HDFC Equity Fund - Direct Growth is 0.77%.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -18690,7 +18690,7 @@
       "unit": "%",
       "display_value": "0.77%",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.13725490196078427,
         -0.7333333333333334,
@@ -20233,7 +20233,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "96837d11-5513-4ca3-adba-5035874bf73c",
+      "chunk_id": "c4cb12bd-35cf-4899-a60f-839c25e3e556",
       "text": "The exit load of HDFC Equity Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -20246,7 +20246,7 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.1607843137254903,
         0.8588235294117648,
@@ -21789,7 +21789,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "167f3e08-513b-4adc-8422-d1f858276b8f",
+      "chunk_id": "fc8c71f2-7b82-4876-b68b-a037da6c8a58",
       "text": "The minimum SIP amount for HDFC Equity Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -21802,7 +21802,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         -0.03529411764705881,
         0.5764705882352941,
@@ -23345,7 +23345,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "2b70c8e8-a575-484f-9441-204482c2eb15",
+      "chunk_id": "d8eb9f5c-49af-4d92-8972-59de6efd717f",
       "text": "The minimum lumpsum investment for HDFC Equity Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -23358,7 +23358,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.6941176470588235,
         0.6470588235294117,
@@ -24901,7 +24901,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "84d09c7a-4488-4ee3-8849-4413bdd04522",
+      "chunk_id": "7a8ce8c2-5e1b-43a2-aa74-93bb04062eb2",
       "text": "The riskometer classification of HDFC Equity Fund - Direct Growth is Moderately High.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -24914,7 +24914,7 @@
       "unit": null,
       "display_value": "Moderately High",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         -0.7490196078431373,
         -0.9921568627450981,
@@ -26457,7 +26457,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "5f82ab59-ae53-4b81-950b-fa416a9ec168",
+      "chunk_id": "0d9af499-2166-4aab-aeb7-17c9a933b297",
       "text": "The benchmark index of HDFC Equity Fund - Direct Growth is NIFTY 500 Total Return Index.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -26470,7 +26470,7 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         -0.5372549019607843,
         -0.45882352941176474,
@@ -28013,7 +28013,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "37bdb5c1-0525-44d4-a706-821fbe286a29",
+      "chunk_id": "c693e86d-a821-4c3e-8a87-3b5d36bf457d",
       "text": "The fund category of HDFC Equity Fund - Direct Growth is Equity / Flexi Cap.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -28026,7 +28026,7 @@
       "unit": null,
       "display_value": "Equity / Flexi Cap",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.050980392156862786,
         0.7098039215686274,
@@ -29569,7 +29569,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "2b0beae9-e527-4785-ad5d-f95d04e41edb",
+      "chunk_id": "7e98d3b8-e58e-408d-99a6-322dc7156a5e",
       "text": "The fund house (AMC) for HDFC Equity Fund - Direct Growth is HDFC.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -29582,7 +29582,7 @@
       "unit": null,
       "display_value": "HDFC",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.3411764705882352,
         -0.15294117647058825,
@@ -31125,7 +31125,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "55cc7287-02b9-48c5-89c7-9748e639356b",
+      "chunk_id": "35a73be6-47a5-4949-a36d-5bfad57de379",
       "text": "The NAV of HDFC Equity Fund - Direct Growth is 2293.072.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -31138,7 +31138,7 @@
       "unit": null,
       "display_value": "2293.072",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         0.07450980392156858,
         0.37254901960784315,
@@ -32681,7 +32681,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "1a0e5142-fb53-41db-96c4-76a2567a4249",
+      "chunk_id": "3402b432-e145-40cc-9766-abdf211fd509",
       "text": "The NAV as-of date for HDFC Equity Fund - Direct Growth is 21-Aug-2026.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -32694,7 +32694,7 @@
       "unit": null,
       "display_value": "21-Aug-2026",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         -0.4274509803921569,
         0.3647058823529412,
@@ -34237,7 +34237,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "c7e05bb4-dcf5-4369-8437-fb78794603a0",
+      "chunk_id": "f3a4e0f6-3c82-4be5-99ea-cfc912d52bf8",
       "text": "The AUM of HDFC Equity Fund - Direct Growth is 110736.41185 crore.",
       "source_url": "https://groww.in/mutual-funds/hdfc-equity-fund-direct-growth",
       "source": "groww.in",
@@ -34250,7 +34250,7 @@
       "unit": null,
       "display_value": "110736.41185",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:e2f3c801d44a1b5b0867e86f62dc4c00bd3c25e74d65dd02b3347cd4369ce067",
+      "content_hash": "sha256:addfdd43df81bef20f81d5b790b58a2c3a9f46bcd889122b88251be0d173d9f8",
       "embedding": [
         -1.0,
         0.9215686274509804,
@@ -35793,7 +35793,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "3f38c2ee-70da-4fbe-8074-baf1c21f4e99",
+      "chunk_id": "7ba742e1-d564-48ca-9926-e5e7e4b3b28f",
       "text": "The expense ratio of HDFC Focused Fund - Direct Growth is 0.8%.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -35806,7 +35806,7 @@
       "unit": "%",
       "display_value": "0.8%",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         0.3647058823529412,
         0.30980392156862746,
@@ -37349,7 +37349,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "76bdae5c-d38b-46f1-8fc8-10f1b130e8ee",
+      "chunk_id": "958d9a09-9efd-42aa-8ecc-03c8e167c9ee",
       "text": "The exit load of HDFC Focused Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -37362,7 +37362,7 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         0.8823529411764706,
         0.8431372549019607,
@@ -38905,7 +38905,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "4c855d91-eb1a-4f4a-8841-8602a17f098c",
+      "chunk_id": "b3828057-c97a-4370-ac7d-471beeadb40b",
       "text": "The minimum SIP amount for HDFC Focused Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -38918,7 +38918,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.4980392156862745,
         0.6862745098039216,
@@ -40461,7 +40461,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "4197d661-9075-48a5-9392-aa0f700ca012",
+      "chunk_id": "c5303e9c-9206-4d05-9394-c77ce3eee467",
       "text": "The minimum lumpsum investment for HDFC Focused Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -40474,7 +40474,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.7254901960784313,
         -0.34901960784313724,
@@ -42017,7 +42017,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "77d58e99-53c7-4424-837a-7f9b86cf0f60",
+      "chunk_id": "7e7271e6-de68-4f99-8fe1-3910dc2879c4",
       "text": "The riskometer classification of HDFC Focused Fund - Direct Growth is Moderately High Riskometer.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -42030,7 +42030,7 @@
       "unit": null,
       "display_value": "Moderately High Riskometer",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.7098039215686274,
         -0.3019607843137255,
@@ -43573,7 +43573,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "785b75c7-fd93-4068-becc-dd056b5ecf01",
+      "chunk_id": "6bbe5ebf-3d7e-4e12-bf3b-fd5e6d06cace",
       "text": "The benchmark index of HDFC Focused Fund - Direct Growth is NIFTY 500 Total Return Index.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -43586,7 +43586,7 @@
       "unit": null,
       "display_value": "NIFTY 500 Total Return Index",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.8509803921568627,
         -0.4509803921568627,
@@ -45129,7 +45129,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "ec2bdb05-52a3-4155-bd0d-7a451ad721c8",
+      "chunk_id": "a5ffda1d-b383-499c-b99e-835315aa87d1",
       "text": "The fund category of HDFC Focused Fund - Direct Growth is Equity / Flexi Cap.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -45142,7 +45142,7 @@
       "unit": null,
       "display_value": "Equity / Flexi Cap",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.027450980392156876,
         0.615686274509804,
@@ -46685,7 +46685,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "7df7ced1-fc15-467f-a5fb-de73184ae0e3",
+      "chunk_id": "f33ac468-af3b-4ef0-ae23-0c3ba438fc4a",
       "text": "The fund house (AMC) for HDFC Focused Fund - Direct Growth is HDFC.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -46698,7 +46698,7 @@
       "unit": null,
       "display_value": "HDFC",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         0.3176470588235294,
         -0.6313725490196078,
@@ -48241,7 +48241,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "70edf8bd-d6c6-4450-91c2-7037b172f6df",
+      "chunk_id": "47d9946e-37b5-421e-a47c-6bfa1514b065",
       "text": "The NAV of HDFC Focused Fund - Direct Growth is 270.023.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -48254,7 +48254,7 @@
       "unit": null,
       "display_value": "270.023",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.48235294117647054,
         0.8274509803921568,
@@ -49797,7 +49797,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "4bd18047-8f4b-45a0-8727-c5f5ba2c84d6",
+      "chunk_id": "ad5ebfc0-f0d4-417e-b8f8-24c0d9bd5ba1",
       "text": "The NAV as-of date for HDFC Focused Fund - Direct Growth is 21-Aug-2026.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -49810,7 +49810,7 @@
       "unit": null,
       "display_value": "21-Aug-2026",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         0.968627450980392,
         -0.5607843137254902,
@@ -51353,7 +51353,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "c246e533-b1cf-46c9-a8c0-ea96185964bb",
+      "chunk_id": "4ca34373-5738-42f0-8ff2-2f3b3a22cdba",
       "text": "The AUM of HDFC Focused Fund - Direct Growth is 27924.7767 crore.",
       "source_url": "https://groww.in/mutual-funds/hdfc-focused-fund-direct-growth",
       "source": "groww.in",
@@ -51366,7 +51366,7 @@
       "unit": null,
       "display_value": "27924.7767",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:345c4241607b3d77ea454063d3b05c018b0582c77740f3ca522bc1ed63c75589",
+      "content_hash": "sha256:b69cbfbe69a2d8b4297f047191d7c86f8f1ac499af030fd44dea8d10851965eb",
       "embedding": [
         -0.14509803921568631,
         -0.3019607843137255,
@@ -52909,7 +52909,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "82274a34-cef5-4a0c-8546-54ea124557f0",
+      "chunk_id": "07e816f2-7f39-4ac7-82a2-d342eb4c6a30",
       "text": "The expense ratio of HDFC Large Cap Fund - Direct Growth is 1.03%.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -52922,7 +52922,7 @@
       "unit": "%",
       "display_value": "1.03%",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.6392156862745098,
         -0.5294117647058824,
@@ -54465,7 +54465,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "ddf24d9e-2ee0-4ed2-8941-e6e5933772a1",
+      "chunk_id": "f2ccc1e4-4ca6-4f16-82da-70e03a7fed74",
       "text": "The exit load of HDFC Large Cap Fund - Direct Growth is Exit load of 1% if redeemed within 1 year.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -54478,7 +54478,7 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.17647058823529416,
         -0.41960784313725485,
@@ -56021,7 +56021,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "64d8344c-7f54-42ce-8f39-524ed62875d3",
+      "chunk_id": "3e9fbc12-cba2-447d-bfdb-1f7090c58847",
       "text": "The minimum SIP amount for HDFC Large Cap Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -56034,7 +56034,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         -0.8274509803921568,
         0.5686274509803921,
@@ -57577,7 +57577,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "3864d73f-d53f-42c1-9265-379c2725a498",
+      "chunk_id": "377a9ca9-659b-4ced-8c3e-dee130597a35",
       "text": "The minimum lumpsum investment for HDFC Large Cap Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -57590,7 +57590,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.39607843137254894,
         0.7725490196078431,
@@ -59133,7 +59133,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "08f9aa37-010b-45db-b87a-e9712dc5d037",
+      "chunk_id": "2b3c35af-67b7-44ee-a2c5-5f4cfe6f7cb1",
       "text": "The riskometer classification of HDFC Large Cap Fund - Direct Growth is Moderately High Riskometer.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -59146,7 +59146,7 @@
       "unit": null,
       "display_value": "Moderately High Riskometer",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         -0.6,
         -0.10588235294117643,
@@ -60689,7 +60689,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "f996d65a-4e33-421e-9c9d-a2b530180380",
+      "chunk_id": "9ae69ede-877e-4495-b85f-f1132c4ccfae",
       "text": "The benchmark index of HDFC Large Cap Fund - Direct Growth is NIFTY 100 Total Return Index.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -60702,7 +60702,7 @@
       "unit": null,
       "display_value": "NIFTY 100 Total Return Index",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.19999999999999996,
         -0.19999999999999996,
@@ -62245,7 +62245,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "c1260202-0080-4975-9359-bd3f0b918f7a",
+      "chunk_id": "b2f89c9c-a1f6-4a2f-b7b9-da1fae6aa4fb",
       "text": "The fund category of HDFC Large Cap Fund - Direct Growth is Equity / Large Cap.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -62258,7 +62258,7 @@
       "unit": null,
       "display_value": "Equity / Large Cap",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         -0.4274509803921569,
         0.2784313725490195,
@@ -63801,7 +63801,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "9fd667f4-92c2-4c6d-81d2-48803933faf3",
+      "chunk_id": "30758391-ace1-4d26-816e-9f355efdbb52",
       "text": "The fund house (AMC) for HDFC Large Cap Fund - Direct Growth is HDFC.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -63814,7 +63814,7 @@
       "unit": null,
       "display_value": "HDFC",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.7490196078431373,
         -0.8666666666666667,
@@ -65357,7 +65357,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "3753e44e-42ab-4ebf-815e-863ae289e2ee",
+      "chunk_id": "4f6ae569-a6eb-4b31-a65e-e955243e507b",
       "text": "The NAV of HDFC Large Cap Fund - Direct Growth is 1245.125.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -65370,7 +65370,7 @@
       "unit": null,
       "display_value": "1245.125",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.5294117647058822,
         0.9294117647058824,
@@ -66913,7 +66913,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "7d90fe3c-a68c-421b-be4b-c0958b93cae2",
+      "chunk_id": "db8794af-2d60-4d0a-b615-ccddedb082ef",
       "text": "The NAV as-of date for HDFC Large Cap Fund - Direct Growth is 21-Aug-2026.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -66926,7 +66926,7 @@
       "unit": null,
       "display_value": "21-Aug-2026",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         -0.8352941176470589,
         0.37254901960784315,
@@ -68469,7 +68469,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "5d56cfcc-a8ee-40ea-86ff-1392924e24a9",
+      "chunk_id": "10cd85e1-4eff-426c-a6e5-6d075ef43ddd",
       "text": "The AUM of HDFC Large Cap Fund - Direct Growth is 40197.8895 crore.",
       "source_url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
       "source": "groww.in",
@@ -68482,7 +68482,7 @@
       "unit": null,
       "display_value": "40197.8895",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:8d4f37ec16c7d98b8e7683aeba5a5d7c03d910e5d1a64df5957ef88251427481",
+      "content_hash": "sha256:23c4a9e423d5e72526573cfb1d840cf32ac7a67a24908a3536b76e875cbf3585",
       "embedding": [
         0.34901960784313735,
         -0.37254901960784315,
@@ -70025,7 +70025,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "6762437c-1243-4114-9137-ae882250fb7f",
+      "chunk_id": "57a10e25-33d3-456e-9f74-4a0d83c42659",
       "text": "The expense ratio of HDFC Mid Cap Fund - Direct Growth is 0.75%.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -70038,7 +70038,7 @@
       "unit": "%",
       "display_value": "0.75%",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         0.388235294117647,
         0.7882352941176471,
@@ -71581,7 +71581,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "6faac653-cf96-4c2a-b299-764bfe5d0ef0",
+      "chunk_id": "4d5c2d2d-242c-4e01-91f7-9b770053f821",
       "text": "The exit load of HDFC Mid Cap Fund - Direct Growth is Exit load of 1% if redeemed within 1 year..",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -71594,7 +71594,7 @@
       "unit": null,
       "display_value": "Exit load of 1% if redeemed within 1 year.",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         0.3019607843137255,
         -0.8588235294117648,
@@ -73137,7 +73137,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "2ce65647-9523-4870-8e09-a89ed956598c",
+      "chunk_id": "01efa9a4-95f8-4ef3-9014-d15afad6525d",
       "text": "The minimum SIP amount for HDFC Mid Cap Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -73150,7 +73150,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.9372549019607843,
         -0.7254901960784313,
@@ -74693,7 +74693,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "fe917131-54d7-4b39-bae4-e03d6909d1c5",
+      "chunk_id": "fc060185-cc5a-421d-9e4d-9a2633662e81",
       "text": "The minimum lumpsum investment for HDFC Mid Cap Fund - Direct Growth is ₹100.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -74706,7 +74706,7 @@
       "unit": "INR",
       "display_value": "₹100",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         0.13725490196078427,
         0.027450980392156765,
@@ -76249,7 +76249,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "5ba71c14-cdc0-49ae-9847-e41d240c7185",
+      "chunk_id": "c61fe9c6-3ecd-44fc-83fb-18860b6b6960",
       "text": "The riskometer classification of HDFC Mid Cap Fund - Direct Growth is Moderately High.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -76262,7 +76262,7 @@
       "unit": null,
       "display_value": "Moderately High",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.019607843137254943,
         0.3647058823529412,
@@ -77805,7 +77805,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "88ca65ad-9593-4b48-ac58-863ba5438f32",
+      "chunk_id": "1995545f-063e-4a84-a0e7-a08e27302b79",
       "text": "The benchmark index of HDFC Mid Cap Fund - Direct Growth is NIFTY Midcap 150 Total Return Index.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -77818,7 +77818,7 @@
       "unit": null,
       "display_value": "NIFTY Midcap 150 Total Return Index",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         0.8196078431372549,
         -0.1843137254901961,
@@ -79361,7 +79361,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "969262e9-15b5-4864-891f-777a5e69911e",
+      "chunk_id": "b6ddb1ba-b214-4af9-a7ac-cb3d55438d18",
       "text": "The fund category of HDFC Mid Cap Fund - Direct Growth is Equity / Mid Cap.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -79374,7 +79374,7 @@
       "unit": null,
       "display_value": "Equity / Mid Cap",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.9686274509803922,
         -0.4901960784313726,
@@ -80917,7 +80917,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "af9fc3c4-64f5-4cb5-9cce-c15d04450e27",
+      "chunk_id": "69cb7b7a-494a-4418-95ff-7634cc110094",
       "text": "The fund house (AMC) for HDFC Mid Cap Fund - Direct Growth is HDFC.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -80930,7 +80930,7 @@
       "unit": null,
       "display_value": "HDFC",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         0.8745098039215686,
         -0.0117647058823529,
@@ -82473,7 +82473,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "bcfd80f9-65fb-48cf-8bfd-2aa3ccba2b6d",
+      "chunk_id": "7f00d6f3-aad3-46a0-948d-120f8f1d5269",
       "text": "The NAV of HDFC Mid Cap Fund - Direct Growth is 236.588.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -82486,7 +82486,7 @@
       "unit": null,
       "display_value": "236.588",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.44313725490196076,
         -0.592156862745098,
@@ -84029,7 +84029,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "65702df3-b07b-4e44-82f7-fa38f6b252e3",
+      "chunk_id": "c1d1c620-d080-46c5-ad71-009c979077c2",
       "text": "The NAV as-of date for HDFC Mid Cap Fund - Direct Growth is 21-Aug-2026.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -84042,7 +84042,7 @@
       "unit": null,
       "display_value": "21-Aug-2026",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.5450980392156863,
         0.9372549019607843,
@@ -85585,7 +85585,7 @@
       "embedding_dim": 1536
     },
     {
-      "chunk_id": "f9fc71e0-2793-4a5f-871c-280efcf5c991",
+      "chunk_id": "a7da7d3c-7508-4220-bbb1-753dd8bbb937",
       "text": "The AUM of HDFC Mid Cap Fund - Direct Growth is 105142.6943 crore.",
       "source_url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
       "source": "groww.in",
@@ -85598,7 +85598,7 @@
       "unit": null,
       "display_value": "105142.6943",
       "last_updated": "2026-08-21",
-      "content_hash": "sha256:f20d53552303d0803847674e95fc949571245f52795fc6c9636e295ebd76488e",
+      "content_hash": "sha256:99c4b9e8c8e6108c5df0a0146dd5bbe84a75b3439a8647cd79913d9107d9f0f0",
       "embedding": [
         -0.22352941176470587,
         0.1607843137254903,
