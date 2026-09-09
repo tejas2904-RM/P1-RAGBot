@@ -73,7 +73,7 @@ flowchart TB
 |-------|---------------------|
 | Frontend | HTML/JS (Phase 5 local); **Vercel** (Phase 7 production) |
 | Backend API | FastAPI (Phase 5 local); **Render** (Phase 6 production) |
-| LLM | **Groq** (`llama-3.3-70b-versatile` default) |
+| LLM | **Groq** (`openai/gpt-oss-120b` default) |
 | Embeddings | `text-embedding-3-small` (OpenAI) or open-source equivalent |
 | Vector DB | Chroma, FAISS, or Qdrant (local-first) |
 | Document parsing | BeautifulSoup, PyPDF, pdfplumber |
@@ -738,7 +738,7 @@ The LLM must be instructed to:
 | `groq` | Production when `GROQ_API_KEY` set | `GroqAnswerGenerator` — temperature ≈ 0 |
 | `auto` | Default env | Groq if key present, else template |
 
-Env: `GENERATOR_PROVIDER`, `GENERATOR_MODEL` (default `llama-3.3-70b-versatile`), `GROQ_API_KEY` / `GENERATOR_API_KEY`.
+Env: `GENERATOR_PROVIDER`, `GENERATOR_MODEL` (default `openai/gpt-oss-120b`), `GROQ_API_KEY` / `GENERATOR_API_KEY`.
 
 #### Response Template
 

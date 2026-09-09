@@ -32,7 +32,7 @@ Copy `.env.example` to `.env` in the project root and set your keys. The app loa
 |----------|---------|
 | `GROQ_API_KEY` | Groq API key for LLM generation |
 | `GENERATOR_PROVIDER` | `template`, `groq`, or `auto` (default) |
-| `GENERATOR_MODEL` | Groq model (default `llama-3.3-70b-versatile`) |
+| `GENERATOR_MODEL` | Groq model (default `openai/gpt-oss-120b`) |
 | `OPENAI_API_KEY` | OpenAI API key for embeddings (`text-embedding-3-small`) |
 | `EMBEDDING_PROVIDER` | `openai`, `deterministic` (tests/offline) |
 | `EMBEDDING_MODEL` | Embedding model (default `text-embedding-3-small`) |

@@ -20,6 +20,6 @@ services:
       - key: EMBEDDING_PROVIDER
         value: openai
       - key: GENERATOR_MODEL
-        value: llama-3.3-70b-versatile
+        value: openai/gpt-oss-120b
       - key: API_CORS_ORIGINS
         sync: false

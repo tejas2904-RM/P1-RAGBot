@@ -34,11 +34,11 @@ def test_groq_generator_returns_model_content(mock_get_client) -> None:
     mock_client.chat.completions.create.return_value = mock_response
     mock_get_client.return_value = mock_client
 
-    generator = GroqAnswerGenerator(api_key="test-groq-key", model="llama-3.3-70b-versatile")
+    generator = GroqAnswerGenerator(api_key="test-groq-key", model="openai/gpt-oss-120b")
     result = generator.generate("expense ratio?", [_chunk()])
 
     assert result == "The expense ratio is 0.75%."
     mock_client.chat.completions.create.assert_called_once()
     call_kwargs = mock_client.chat.completions.create.call_args.kwargs
-    assert call_kwargs["model"] == "llama-3.3-70b-versatile"
+    assert call_kwargs["model"] == "openai/gpt-oss-120b"
     assert call_kwargs["temperature"] == 0.0
