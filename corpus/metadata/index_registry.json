@@ -1,15 +1,15 @@
 {
-  "last_indexed_at": "2026-09-28T10:10:53.181935+00:00",
+  "last_indexed_at": "2026-09-29T10:08:57.131898+00:00",
   "chunk_count": 56,
   "embedding_model": "text-embedding-3-small",
   "embedding_dim": 1536,
   "collection_name": "mf_facts",
   "index_path": "/home/runner/work/P1-RAGBot/P1-RAGBot/data/vector_store",
   "scheme_content_hashes": {
-    "hdfc-elss": "sha256:f722002357bc0f7fd189b90d3a8795c96d2fa9ac2df3cf1bfe057c9859a7ce14",
-    "hdfc-equity": "sha256:a4e7f5db68f22da61fef7173e761e7ebe3a1dd6b9f7f6a8e185a4e0ae68724a9",
-    "hdfc-focused": "sha256:87b64cc1266733e29596b0ddb9de3e9b8d128471c37f5a61ca7c575519df6a32",
-    "hdfc-large-cap": "sha256:f0713bf8b4d46a979d703da173e3c4547d31971987a914bc36429dc5aa6d6bdc",
-    "hdfc-mid-cap": "sha256:99f341246d26511785626ffb3c435127678f624e65712258d5b82074ebd0aa4d"
+    "hdfc-elss": "sha256:bbf890e24ef78966a9584cad5dc8d67761b0f438aaebf5d2c0cd9c0753148a1b",
+    "hdfc-equity": "sha256:eebb452b243f049a5a8f1fe480ef7d44eb39394143485df7ed144b64348be658",
+    "hdfc-focused": "sha256:4fd64ff383d317d8e2e0d13209bd206891c2d39df8f67376a33fcd416af53321",
+    "hdfc-large-cap": "sha256:5f1f17925b92a9066a359052231694f7970559fdc3d5928e0a3dc828cb0bd140",
+    "hdfc-mid-cap": "sha256:31f71fae5ea4c8afca058735a63b7fe922a7a34812284db809bac9cbbe4a69b9"
   }
 }
